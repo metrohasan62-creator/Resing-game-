@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drive Mad - Mini</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Level: <span id="level">1</span></div>
+      <div>Distance: <span id="distance">0</span> m</div>
+    </div>
+    <div id="energy-container">
+      <div>Energy</div>
+      <div id="energy-bar"><div id="energy-fill"></div></div>
+      <div class="energy-controls">
+        <button id="energy-decrease">- Reduce</button>
+        <button id="energy-increase">+ Increase</button>
+      </div>
+    </div>
+    <div id="controls">
+      <div>Controls: A / ← = Throttle | D / → = Brake | W / Space = Jump</div>
+      <button id="level-up">Level Up (cost: <span id="lvl-cost">100</span>)</button>
+    </div>
+  </div>
+
+  <div id="canvas-wrap">
+    <canvas id="gameCanvas" width="1000" height="500" tabindex="0"></canvas>
+  </div>
+
+  <footer id="footer">Made with JS • Deploy on GitHub Pages</footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
